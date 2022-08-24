@@ -5,7 +5,6 @@ uppercase = list(string.ascii_uppercase)
 lowercase = list(string.ascii_lowercase)
 digits = list(string.digits)
 special_characters = list("!@#$%^&*()")
-characters = list(string.ascii_letters + string.digits + "!@#$%^&*()")
 correct_length = False
 
 print("Welcome to the password generator")
@@ -18,7 +17,7 @@ while correct_length == False:
 
 
 password = []
-while len(password) < password_length:
+while len(password) <= password_length:
 
 	password.append(random.choice(uppercase))
 	password.append(random.choice(lowercase))
