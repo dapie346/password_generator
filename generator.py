@@ -16,20 +16,16 @@ while correct_length == False:
     else:
         print("Incorrect length! Type again.")
 
-#random.shuffle(characters)
 
 password = []
-for i in range(password_length):
+while len(password) < password_length:
+
 	password.append(random.choice(uppercase))
-
-for i in range(password_length):
 	password.append(random.choice(lowercase))
-
-for i in range(password_length):
 	password.append(random.choice(digits))
-
-for i in range(password_length):
 	password.append(random.choice(special_characters))
+    
+random.shuffle(password)
 
 print("".join(password))
 
