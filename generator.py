@@ -24,8 +24,12 @@ while len(password) < password_length:
 	password.append(random.choice(lowercase))
 	password.append(random.choice(digits))
 	password.append(random.choice(special_characters))
-    
+
+sum = len(password) - password_length
+
 random.shuffle(password)
+
+password = password[:-sum]
 
 print("".join(password))
 
