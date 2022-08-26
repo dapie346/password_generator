@@ -6,7 +6,6 @@ lowercase = list(string.ascii_lowercase)
 digits = list(string.digits)
 special_characters = list("!@#$%^&*()")
 characters = list(string.ascii_letters + string.digits + "!@#$%^&*()")
-keep_generating = True
 
 print("Welcome to the password generator")
 
